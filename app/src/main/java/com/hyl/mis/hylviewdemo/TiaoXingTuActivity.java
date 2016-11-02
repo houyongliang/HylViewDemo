@@ -1,0 +1,14 @@
+package com.hyl.mis.hylviewdemo;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class TiaoXingTuActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tiao_xing_tu);
+
+    }
+}
