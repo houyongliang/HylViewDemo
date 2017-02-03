@@ -56,9 +56,6 @@ public class Main2Activity extends Activity {
         });
     }
 
-    public void jumpActivity3(View v) {
-        Intent intent=new Intent(Main2Activity.this,GuaGuaLeActivity.class);
-        startActivity(intent);
-    }
+
 
 }

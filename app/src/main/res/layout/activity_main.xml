@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
+     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hyl.mis.hylviewdemo.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_jumpActivity2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="跳活动2"
+            android:onClick="jumpActivity2"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_jumpMaskActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="跳Mask"
+            android:onClick="jumpMaskActivity"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_jumpActivity3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="跳活动3"
+            android:onClick="jumpActivity3"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_jumptiaoxingtu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="跳条型图"
+            android:onClick="jumptiaoxingtuActivity"/>
+    </LinearLayout>
+
+    <com.hyl.mis.hylviewdemo.view.CircleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:arcColor="#00ff00"
+        app:circleColor="#ff0000"
+        app:startAngle="20"
+        app:sweepAngle="300"
+        app:text="真帅。。。"
+        app:textColor="#0000ff"
+        app:textSize="15sp"/>
+</LinearLayout>
